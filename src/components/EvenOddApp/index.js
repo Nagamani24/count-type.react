@@ -6,7 +6,7 @@ class EvenOddApp extends Component {
   state = {num: 0, description: 'Count is Even'}
 
   onIncrement = () => {
-    const number = Math.floor(Math.random() * 1000)
+    const number = Math.ceil(Math.random() * 100)
 
     if (number % 2 === 0) {
       this.setState({num: number, description: 'Count is Even'})
